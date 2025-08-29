@@ -113,6 +113,45 @@ ul {
   margin-bottom: 20px;
 }
 
+/* Media query para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  body {
+    /* Ajusta a imagem de fundo para que ela cubra a tela inteira em dispositivos móveis */
+    background-size: cover;
+  }
 
+  nav {
+    /* Mude a navegação para um layout de coluna para que os links não fiquem amontoados */
+    flex-direction: column;
+    gap: 8px; /* Ajuste o espaço entre os links */
+  }
 
+  main {
+    /* Reduz o padding em telas menores para aproveitar melhor o espaço */
+    padding: 0 10px;
+  }
 
+  .gallery {
+    /* Altera o layout da galeria para que as imagens fiquem uma abaixo da outra em telas menores */
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    /* Garantir que as imagens se ajustem bem */
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query para telas ainda menores, como smartphones */
+@media (max-width: 480px) {
+  header {
+    /* Reduz o padding do cabeçalho */
+    padding: 10px;
+  }
+
+  h1, h2 {
+    /* Reduz o tamanho das fontes em telas menores */
+    font-size: 1.5em;
+  }
+}
