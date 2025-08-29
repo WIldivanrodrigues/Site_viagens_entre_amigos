@@ -1,0 +1,118 @@
+:root {
+  --bg: #f5fbff;
+  --accent: #0d7eda;
+  --accent-light: #90e0ef;
+  --text: #256cc9;
+  --muted: #555;
+  --radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  background: url(images/foto-fundo.jpeg) no-repeat center center fixed;
+  background-size: auto;
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  background: var(--accent);
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+nav {
+  background: var(--accent-light);
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 12px;
+}
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { text-decoration: underline; }
+
+main {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  margin-bottom: 16px;
+}
+
+.card {
+    text-align: center;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 12px;
+  
+}
+.gallery img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+}
+form button {
+  background: var(--accent);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+form button:hover { background: #0096c7; }
+
+.card-link{
+    text-align: center;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-position: inside; /* deixa o bullet próximo do texto */
+  padding-left: 0;             /* remove recuo padrão */
+  margin-left: 0;              /* remove margem padrão */
+}
+.recordacao{
+    text-align: center;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+
